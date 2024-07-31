@@ -32,7 +32,7 @@
                         <tr>
                             <td>{{ $project->id }}</td>
                             <td>{{ $project->title }}</td>
-                            <td>{{ $project->type_id }}</td>
+                            <td>{{ $project->type->name }}</td>
                             <td>{{ $project->prog_langs }}</td>
                             <td>
                                 <a href="{{Route('admin.projects.show', $project)}}" class="btn btn-primary btn-sm me-2 ms-2">Show</a>
