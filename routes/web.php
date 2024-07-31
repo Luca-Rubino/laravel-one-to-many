@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
-
+use App\Http\Controllers\AboutUsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +15,4 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/',[IndexController::class,'index'])->name('Home');
+Route::get('/chi_siamo',[AboutUsController::class,'about_us'])->name('About_us');
