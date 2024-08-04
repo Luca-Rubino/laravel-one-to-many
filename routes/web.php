@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Admin\ProjectController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,4 @@ use App\Http\Controllers\AboutUsController;
 */
 
 Route::get('/',[IndexController::class,'index'])->name('Home');
-Route::get('/chi_siamo',[AboutUsController::class,'about_us'])->name('About_us');
+Route::get('/Exercice',[ProjectController::class,'index'])->name('Exercice');

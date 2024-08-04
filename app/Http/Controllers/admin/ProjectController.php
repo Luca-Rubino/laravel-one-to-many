@@ -14,8 +14,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::paginate(10);
-        return view('admin.projects.index', compact('projects'));
+        $projects = Project::all();
+        return view('page.exercise', compact('projects'));
     }
     /**
      * Show the form for creating a new resource.
@@ -23,7 +23,7 @@ class ProjectController extends Controller
     public function create()
     {
         $project = new Project();
-        return view('admin.projects.create', compact('project'));
+        return view('page.exercise', compact('project'));
         $types = Type::all();
         return view('admin.projects.create', compact('project', 'types'));
     }
